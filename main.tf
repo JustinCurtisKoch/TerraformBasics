@@ -78,8 +78,8 @@ resource "azurerm_virtual_machine" "linux1" {
   }
   os_profile {
     computer_name  = "hostname"
-    admin_username = var.linux1_username
-    admin_password = var.linux1_passwd
+    admin_username = "azureuser"
+    admin_password = "1234!@#$qweQWE"
   }
   os_profile_linux_config {
     disable_password_authentication = false
