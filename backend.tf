@@ -6,3 +6,7 @@ terraform {
     key                  = "jck_key_tfbasics"
   }
 }
+
+provider "azurerm" {
+  features {}
+}

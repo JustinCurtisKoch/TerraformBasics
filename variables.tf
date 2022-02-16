@@ -43,9 +43,9 @@ variable "tags" {
 }
 
 variable "linux1_username" {
-    type = string
+  type = string
 }
 
 variable "linux1_passwd" {
-    type = string
+  type = string
 }

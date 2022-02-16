@@ -1,12 +1,12 @@
 data "azurerm_subnet" "subnet_data" {
-    name = var.subnet1
-    virtual_network_name = azurerm_virtual_network.demo_network.name
-    resource_group_name = azurerm_resource_group.ResGrptf.name
+  name                 = var.subnet1
+  virtual_network_name = azurerm_virtual_network.demo_network.name
+  resource_group_name  = azurerm_resource_group.ResGrptf.name
 }
 
 output "subnet_info" {
   value = data.azurerm_subnet.subnet_data.id
-}   
+}
 
 resource "azurerm_resource_group" "ResGrptf" {
   name     = var.jck_tf_RG
@@ -35,7 +35,7 @@ resource "azurerm_virtual_network" "demo_network" {
     address_prefix = var.subnet2_address
     security_group = azurerm_network_security_group.my_NSG.id
   }
- 
+
   tags = var.tags
 }
 
