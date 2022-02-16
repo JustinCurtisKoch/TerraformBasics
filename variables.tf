@@ -41,11 +41,3 @@ variable "subnet2_address" {
 variable "tags" {
   type = map(string)
 }
-
-variable "linux1_username" {
-  type = string
-}
-
-variable "linux1_passwd" {
-  type = string
-}
