@@ -1,9 +1,3 @@
-# service principle credentials
-subscription_id = ""
-client_id       = ""
-client_secret   = ""
-tenant_id       = ""
-
 #resource group variables
 jck_tf_RG = "terraformbuild"
 location  = "eastus"
